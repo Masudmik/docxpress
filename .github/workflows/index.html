@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মোঃ মাসুদ মিয়া - আদনান ডিজিটাল সেন্টার</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Noto+Sans+Bengali:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Google Fonts */
+        body {
+            font-family: 'Noto Sans Bengali', 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #4CAF50, #81C784); /* Green gradient background */
+            color: #333;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        .container {
+            padding: 20px;
+            width: 100%;
+            max-width: 500px; /* Max width for larger screens */
+        }
+
+        .profile-card {
+            background-color: #ffffff;
+            border-radius: 15px; /* More rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+            padding: 30px;
+            text-align: center;
+            animation: fadeIn 1s ease-out; /* Fade in animation */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .profile-image-wrapper {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: -75px auto 20px auto; /* Pull image up and center */
+            background-color: #fff;
+            padding: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #4CAF50; /* Green border around image */
+        }
+
+        .name {
+            font-size: 2.5em; /* Larger name */
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: 700;
+        }
+
+        .title {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px; /* Spacing between items */
+            padding-bottom: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .contact-item span {
+            font-weight: 400;
+            color: #555;
+            flex-grow: 1; /* Pushes button to right */
+            margin-left: 10px;
+        }
+
+        .icon {
+            font-size: 1.2em;
+            color: #4CAF50; /* Green icon color */
+            width: 25px; /* Fixed width for icons */
+            text-align: center;
+        }
+
+        .action-button {
+            background-color: #4CAF50; /* Green button */
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 25px; /* Pill-shaped buttons */
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: all 0.3s ease; /* Smooth transition on hover */
+            display: inline-flex; /* Align icon and text */
+            align-items: center;
+            gap: 8px; /* Space between icon and text */
+            white-space: nowrap; /* Prevent text wrapping */
+        }
+
+        .action-button:hover {
+            background-color: #388E3C; /* Darker green on hover */
+            transform: translateY(-2px); /* Slight lift effect */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Specific button styles for social media */
+        .whatsapp-button {
+            background-color: #25D366; /* WhatsApp green */
+        }
+
+        .whatsapp-button:hover {
+            background-color: #1DA851;
+        }
+
+        .telegram-button {
+            background-color: #0088CC; /* Telegram blue */
+        }
+
+        .telegram-button:hover {
+            background-color: #006699;
+        }
+
+        .facebook-button { /* New style for Facebook button */
+            background-color: #1877F2; /* Facebook blue */
+        }
+
+        .facebook-button:hover {
+            background-color: #155bb5;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .profile-card {
+                margin-top: 75px; /* Adjust margin for smaller screens */
+            }
+            .name {
+                font-size: 2em;
+            }
+            .title {
+                font-size: 1em;
+            }
+            .action-button {
+                padding: 8px 12px;
+                font-size: 0.85em;
+            }
+            .contact-item {
+                flex-direction: column; /* Stack items vertically */
+                align-items: flex-start; /* Align text to left */
+            }
+            .contact-item span {
+                margin-left: 0;
+                margin-bottom: 5px;
+            }
+            .action-button {
+                width: 100%; /* Full width buttons on small screens */
+                justify-content: center;
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-image-wrapper">
+                <img src="Masud Old Pic copy.jpg" alt="মোঃ মাসুদ মিয়া" class="profile-image">
+            </div>
+            <h1 class="name">মোঃ মাসুদ মিয়া</h1>
+            <p class="title">পরিচালক, আদনান ডিজিটাল সেন্টার</p>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-mobile-alt icon"></i>
+                    <span>মোবাইল:</span>
+                    <button id="downloadVcf" class="action-button download-button">
+                        <i class="fas fa-download"></i> সেভ করুন
+                    </button>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope icon"></i>
+                    <span>ইমেল:</span>
+                    <a href="mailto:masudibnkhalil@gmail.com" target="_blank" class="action-button social-link">
+                        <i class="fas fa-arrow-right"></i> পাঠান
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp icon"></i>
+                    <span>WhatsApp:</span>
+                    <a href="https://wa.me/qr/R5BT7HXJNE5EH1" target="_blank" class="action-button social-link whatsapp-button">
+                        <i class="fab fa-whatsapp"></i> মেসেজ
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-telegram-plane icon"></i>
+                    <span>টেলিগ্রাম:</span>
+                    <a href="https://t.me/Masudmik1" target="_blank" class="action-button social-link telegram-button">
+                        <i class="fab fa-telegram-plane"></i> মেসেজ
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-facebook-f icon"></i> <span>ফেসবুক:</span>
+                    <a href="https://www.facebook.com/masudibn.khalil" target="_blank" class="action-button social-link facebook-button"> <i class="fab fa-facebook-f"></i> প্রোফাইল
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('downloadVcf').addEventListener('click', function() {
+            const name = "মোঃ মাসুদ মিয়া";
+            const mobileNumber = "+8801763122185";
+            const email = "masudibnkhalil@gmail.com";
+            const organization = "আদনান ডিজিটাল সেন্টার";
+            const title = "পরিচালক";
+
+            const vcardContent = `BEGIN:VCARD
+VERSION:3.0
+FN:${name}
+N:${name};;;;
+ORG:${organization}
+TITLE:${title}
+TEL;TYPE=CELL:${mobileNumber}
+EMAIL;TYPE=INTERNET:${email}
+END:VCARD`;
+
+            const blob = new Blob([vcardContent], { type: 'text/vcard' });
+            const url = URL.createObjectURL(blob);
+
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `Masud_Miya.vcf`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+    </script>
+</body>
+</html>
